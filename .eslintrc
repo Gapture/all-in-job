@@ -1,8 +1,12 @@
 {
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+ },
   "plugins": ["@typescript-eslint", "css-import-order", "no-relative-import-paths"],
   "extends": [
     "airbnb",
+    "airbnb-typescript",
     "plugin:prettier/recommended",
     "plugin:css-import-order/recommended",
     "plugin:@typescript-eslint/recommended"
