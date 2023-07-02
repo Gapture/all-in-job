@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
-        <p>React TypeScript Template</p>
       </header>
     </div>
   );
