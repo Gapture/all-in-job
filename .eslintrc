@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "css-import-order"],
+  "plugins": ["@typescript-eslint", "css-import-order", "no-relative-import-paths"],
   "extends": [
     "airbnb",
     "plugin:prettier/recommended",
@@ -8,6 +8,10 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "no-relative-import-paths/no-relative-import-paths": [
+      "warn",
+      { "allowSameFolder": true, "rootDir": "src", "prefix": "" }
+    ],
     "prettier/prettier": [
       "error",
       {
